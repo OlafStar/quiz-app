@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panel start-panel visable">
+            <h1>SIMPLE QUIZ</h1>
+                <span>
+                    <h2>What's your name?</h2>
+                    <input type="text">
+                    <button id="start_btn">Start</button>
+                </span>
+        </div>
+        <div class="panel game-panel hidden">
+            <div class='player'>
+                <h3>1</h3>
+                <h3>1</h3>
+            </div>
+            <div class="wrapper">
+                <h1>Question 1</h1>
+                <div class="btns">
+                    <button>Answer 1</button>
+                    <button>Answer 2</button>
+                    <button>Answer 3</button>
+                    <button>Answer 4</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel end-panel hidden">
+            <h1>Text</h1>
+            <div class="circle-pos">
+                <div class="circle">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="score-number">0%</div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
